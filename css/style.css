@@ -1,0 +1,254 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1212px;
+    margin: 0 auto; /* установить по центру */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box; /* убрать горизонтальную линию прокрутки */
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; /* установить по центру */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: space-between; /* выравнивает элементы горизонтальн */
+    align-items: center; /* выравнивает элементы вертикально  */
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+
+/* Nav */
+.nav {
+    list-style-type: none;
+    display: flex; /* в ряд  */
+    justify-content: flex-start; /* друг за другом */
+    align-items: center;;
+    font-size: 14px;
+}
+
+.nav_btn {
+    background-color: #5528FF;
+    border-radius: 5px;
+    padding: 6px 16px;
+    color: #fff;;
+    border: none;
+    font-weight: 700;
+}
+
+.nav>li {
+    margin-left: 37px;
+}
+
+.nav>li>a {
+    text-decoration: none;
+    color: #202020;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo_img {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-image: url(../img/logo.svg);
+    margin-right: 25px;
+}
+
+.logo_text {
+    font-size: 24px;
+    color: #202020;
+}
+
+.title_main {
+    font-size: 55px;
+    color: #202020;
+    font-weight: 700;
+    letter-spacing: 0.5px;;
+    margin-bottom: 0.7em;
+}
+
+.text_main {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #4f4f4f;
+    max-width: 746px;
+    padding-bottom: 63px;
+}
+
+.button {
+    background-color: #5528FF;
+    border-radius: 10px;
+    padding: 16px 59px;
+    color: #fff;;
+    border: none;
+    font-size: 24px;
+}
+
+/* block-top */
+.block {
+    padding-top: 85px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.block_line-top {
+    border-top: 1px solid #c2c2c2;
+}
+
+.block h2 {
+    position: absolute;
+    top: -24px; /* чтобы встал на линию */
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 5px 15px;
+    color: #c2c2c2;
+}
+
+/* services */
+.services_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services_img {
+    flex-basis: 165px; /* !!!!!!!!!!!! */
+    text-align: center;
+}
+
+.services_text {
+    flex-basis: calc(80% - 165px); /* !!!!!!!!!!!! */
+}
+
+.services {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 50% 50%;
+    grid-row-gap: 38px;
+}
+
+.services h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 1.5;
+}
+
+/* Clients */
+.clients {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    text-align: center;
+    grid-row-gap: 40px;
+    padding-top: 0;
+}
+
+/* Team */
+.team {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 40px; /* Отступы между айтемами*/
+    padding-top: 20px;
+}
+
+.team_item h3 {
+    font-size: 28px;
+    color: #202020;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.team_item  p {
+    font-size: 14px;
+    color: #b2b2b2 ;
+
+}
+
+.team_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team_item img {
+    margin-right: 20px;
+}
+
+
+.team_item>div { /* стили для всех дивов в team_item */
+    flex-basis: calc(100% - 100px);
+}
+
+
+
+/* Footer */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+/* socisl */
+.social {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.social>li {
+    margin-left: 30px;
+}
+
+
+.social>li>a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #b2b2b2; 
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
